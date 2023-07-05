@@ -59,3 +59,13 @@
     --Light-lavander: hsl(241, 100%, 89%);
     --Dark-grey-blue: hsl(224, 30%, 27%);
   }
+
+  main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #main-container{
+    display: flex;
+  }
