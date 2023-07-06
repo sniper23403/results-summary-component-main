@@ -79,6 +79,27 @@
     border-radius: 30px;
     box-shadow: 2px 4px 20px 11px #00000012;
   }
+    .right-container{
+    padding: 27px;
+  }
+
+    /*Summary */
+  h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+    /*scores*/
+  h5{
+    color: black;
+    font-weight: 800;
+  }
+
+  /* /100*/
+  span{
+    color: hsla(224, 30%, 27%,50%);
+  }
 
   .sc{
     display: flex;
@@ -120,19 +141,6 @@
     font-weight: 700;
   }
 
-  .left-container{
-    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 27px;
-  }
-
-  .right-container{
-    padding: 27px;
-  }
-
   button{
     width: 17em;
     border-radius: 25px;
@@ -143,29 +151,25 @@
     border: 0;
 }
 
-/*Sunnary */
-  h3{
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: 800;
-  }
-
-  /*scores*/
-  h5{
-    color: black;
-    font-weight: 800;
-  }
-
-  /* /100*/
-  span{
-    color: hsla(224, 30%, 27%,50%);
-  }
-
   /*change  bgcolor when press it*/
   button:active{
     cursor: pointer;
     background:linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
   }
+  
+  .left-container{
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 27px;
+  }
+  
+/* Your Result */
+.left-container h3{
+    color: var(--Light-lavander);
+}
 
 .circle{
     background: linear-gradient(to top,hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1) 70%);
@@ -186,6 +190,12 @@
     font-weight: 800;
 }
 
+/* of 100 */
+.circle span{
+    color: var(--Light-lavander);
+    font-weight: 800;
+}
+
 /*Great*/
 .left-container h2{
     color: var(--White);
@@ -198,17 +208,6 @@ taken these tests.*/
     padding: 15px;
     text-align: center;
     color: hsl(241, 100%, 89%);
-}
-
-/* Your Result */
-.left-container h3{
-    color: var(--Light-lavander);
-}
-
-/* of 100 */
-.circle span{
-    color: var(--Light-lavander);
-    font-weight: 800;
 }
 
 @media screen and (max-width: 450px) {
